@@ -1,21 +1,28 @@
 <div class="container">
-    <div class="row">
-        <img [src]="user.avatar_url" class="col-12">
-        <span class="col-12" [ngClass]="{'d-flex justify-content-around p-2':true}">
-            <span>Username:</span>
-            <span>{{user.login}}</span>
-        </span> 
-        <span class="p-1">
-            <span [ngClass]="{'d-flex justify-content-around p-2':true}">
-                <span>Type:</span>
-                <span>{{user.type}}</span>
-            </span>
-        </span>
-        <span class="p-1">
-            <span [ngClass]="{'d-flex justify-content-around p-2':true}">
-                <span>Link:</span>
-                <a [href]="'https://www.github.com/'+user.login" [ngClass]="{a: user.url != ''}">git</a>
-            </span>
-        </span>
+    <div class="card">
+        <div class="row">
+            <img [src]="user.avatar_url" class="col-12 card-img">
+
+            <div class="card-body">
+
+                <span class="col-12" [ngClass]="{'d-flex justify-content-around p-2':true}">
+                    <span>Username:</span>
+                    <span>{{user.login}}</span>
+                </span>
+                <span class="p-1">
+                    <span [ngClass]="{'d-flex justify-content-around p-2':true}">
+                        <span>Type:</span>
+                        <span>{{user.type}}</span>
+                    </span>
+                </span>
+                <span class="p-1">
+                    <span [ngClass]="{'d-flex justify-content-around p-2':true}">
+                        <span>Link:</span>
+                        <a [href]="'https://www.github.com/'+user.login" [ngClass]="{a: user.url != ''}">git</a>
+                    </span>
+                </span>
+                
+            </div>
+        </div>
     </div>
 </div>

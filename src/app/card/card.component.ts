@@ -15,10 +15,7 @@ export class CardComponent implements OnInit,AfterViewInit {
   constructor() {
     
   }
-  ngAfterViewInit(): void {
-    console.log(this.user);
-    
-  }
+  ngAfterViewInit(): void {  }
 
   ngOnInit(): void {}
 }
